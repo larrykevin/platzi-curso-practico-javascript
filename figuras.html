@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <section>
+            <p>@larrykevin23</p>
+            <h1>Figuras<br/>Geométricas</h1>
+            <div>
+                <img src="./jsplatzi.svg" alt="logo de la escuela de javascript platzi" />
+                <p>Escuela de Javascript</p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="response">
+            <div class="response__perimetro">
+                <p>Perímetro</p>
+                <span id="resPerimetro"></span>
+            </div>
+            <div class="response__area">
+                <p>Área</p>
+                <span id="resArea"></span>
+            </div>
+        </section>
+        <section class="figure">
+            <section class="figure__cuadrado">
+                <div class="cuadrado"></div>
+                <form>
+                    <input id="InputCuadrado" type="number" />
+                    <label for="InputCuadrado">a</label>
+                    <span>a</span>
+                    <span>a</span>
+                    <span>a</span>
+                </form>
+                <button type="button" onclick="calcularCuadrado()">Calcular</button>
+            </section>
+            <section class="figure__triangulo">
+                <div class="triangulo"></div>
+                <form>
+                    <div>
+                        <label for="ladoATriangulo">
+                            <span>a</span>
+                            <input id="ladoATriangulo" type="number" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="ladoBTriangulo">
+                            <span>b</span>
+                            <input id="ladoBTriangulo" type="number" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="baseTriangulo">
+                            <span>base</span>
+                            <input id="baseTriangulo" type="number" />
+                        </label>
+                    </div>
+                </form>
+                <button type="button" onclick="calcularTriangulo()">Calcular</button>
+            </section>
+            <section class="figure__circulo">
+                <div class="circulo"></div>
+                <form>
+                    <input id="InputCirculo" type="number" />
+                    <label for="InputCirculo">radio</label>
+                    <div></div>
+                    <span>r</span>
+                </form>
+                <button type="button" onclick="calcularCirculo()">Calcular</button>
+            </section>
+        </section>
+        <div class="box">
+            <p>Rellena las medidas de la figura en el recuadro correspondiente</p>
+        </div>
+    </main>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
